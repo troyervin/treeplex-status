@@ -6,7 +6,7 @@ sites:
   - name: TreePlex
     url: https://treeplex.ca
   - name: Plex
-    url: https://plex.treeplex.ca
+    url: https://plex.treeplex.ca/web/index.html
   - name: Emby
     url: https://emby.treeplex.ca
   - name: Overseerr
