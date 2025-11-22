@@ -5,13 +5,16 @@ repo: treeplex-status # The name of this repository
 sites:
   - name: TreePlex
     url: https://treeplex.ca
+    icon: https://raw.githubusercontent.com/troyervin/treeplex-status/master/assets/treeplexicon.ico
   - name: Plex
     url: https://plex.treeplex.ca/web/index.html
+    icon: https://raw.githubusercontent.com/troyervin/treeplex-status/master/assets/plexicon.ico
   - name: Emby
     url: https://emby.treeplex.ca/web/index.html
-    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Emby_logo.svg/1200px-Emby_logo.svg.png
+    icon: https://raw.githubusercontent.com/troyervin/treeplex-status/master/assets/embyicon.ico
   - name: Overseerr
     url: https://add.treeplex.ca
+    icon: https://raw.githubusercontent.com/troyervin/treeplex-status/master/assets/overseerricon.ico
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
