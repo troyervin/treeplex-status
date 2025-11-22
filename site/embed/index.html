@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TreePlex Status – Embed</title>
+
+<style>
+    body {
+        background: transparent;
+        margin: 0;
+        font-family: system-ui, sans-serif;
+        color: white;
+    }
+    .wrapper {
+        background: rgba(0,0,0,0.75);
+        padding: 1.5rem;
+        border-radius: 12px;
+    }
+    table {
+        width: 100%;
+        margin-top: 1rem;
+        border-collapse: collapse;
+    }
+    td, th {
+        padding: 8px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+    <h2 id="statusText">Loading…</h2>
+    <table id="serviceTable"></table>
+</div>
+
+<script>
+async function load() {
+    const repo = "troyervin/treeplex-status";
+
+    const rows = await fetch(`https://raw.githubusercontent.com/${repo}/master/api/summary.json`)
+        .then(r => r.json())
+        .catch(err => {
+            document.getElementById("statusText").innerText = "Error loading status";
+            return null;
+        });
+
+    if (!rows) return;
+
+    document.getElementById("statusText").innerText =
+        rows.status.allSystemsOperational
+            ? "🟢 Live Status: All systems operational"
+            : "🟡 Issues detected";
+
+    let html = `
+        <tr><th>Service</th><th>Status</th><th>Response</th><th>Uptime</th></tr>
+    `;
+
+    rows.services.forEach(s => {
+        html += `
+        <tr>
+            <td>${s.name}</td>
+            <td>${s.status}</td>
+            <td>${s.responseTime ?? "-"}</td>
+            <td>${s.uptime ?? "-"}</td>
+        </tr>`;
+    });
+
+    document.getElementById("serviceTable").innerHTML = html;
+}
+
+load();
+</script>
+
+</body>
+</html>
