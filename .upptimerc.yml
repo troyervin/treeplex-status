@@ -1,7 +1,6 @@
 # Change these first
 owner: troyervin # Your GitHub organization or username, where this repository lives
 repo: treeplex-status # The name of this repository
-
 sites:
   - name: TreePlex Server
     url: https://treeplex.ca
@@ -18,7 +17,6 @@ sites:
   - name: HomeAssistant
     url: https://ha.treeplex.ca
     icon: https://raw.githubusercontent.com/troyervin/treeplex-status/master/assets/homeassistanticon.ico
-
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
@@ -28,7 +26,6 @@ status-website:
   name: Treeplex Status
   #introTitle: "**TreePlex Status**"
   introMessage: Real-time status for Plex, Emby, and Overseerr services
-
 # This CSS block forces the background image and adds a card effect
   css: |
     body {
@@ -43,13 +40,18 @@ status-website:
     /* Darker background for the tabs */
     .tabs { background-color: rgba(0,0,0,0.9) !important; }
 
-    /* NEW: Darker box behind the graphs (was 0.6, now 0.85) */
-    section {
-      background-color: rgba(0, 0, 0, 0.85); /* Much darker now */
+    /* NEW FIX: This uses ":has(svg)" to only style the box with the graphs */
+    section:has(svg) {
+      background-color: rgba(0, 0, 0, 0.85);
       padding: 1.5rem;
       border-radius: 12px;
       margin-top: 2rem;
       box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    }
+    
+    /* Extra safety: Hide anything that might still be lingering */
+    .incidents-list:empty, .pagination:empty {
+      display: none !important;
     }
     
     /* NEW: Hides the empty "past incidents" boxes */
@@ -59,7 +61,6 @@ status-website:
     .pagination:empty {
         display: none !important;
     }
-  
   navbar:
     - title: TreePlex Home
       href: https://treeplex.ca
