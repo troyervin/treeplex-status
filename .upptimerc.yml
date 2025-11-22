@@ -28,6 +28,19 @@ status-website:
   name: Treeplex Status
   #introTitle: "**TreePlex Status**"
   introMessage: Real-time status for Plex, Emby, and Overseerr services
+
+# This CSS block forces the background image
+  css: |
+    body {
+      background-image: url('https://raw.githubusercontent.com/troyervin/treeplex-status/master/assets/flex.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+    }
+    .hero { background-color: rgba(0,0,0,0.6) !important; }
+    .tabs { background-color: rgba(0,0,0,0.8) !important; }
+  
   navbar:
     - title: TreePlex Home
       href: https://treeplex.ca
