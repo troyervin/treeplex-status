@@ -1,76 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>TreePlex Status – Embed</title>
-
+<title>TreePlex Embed</title>
 <style>
     body {
-        background: transparent;
         margin: 0;
-        font-family: system-ui, sans-serif;
+        padding: 20px;
+        background: transparent;
+        font-family: Arial, sans-serif;
         color: white;
     }
-    .wrapper {
-        background: rgba(0,0,0,0.75);
-        padding: 1.5rem;
-        border-radius: 12px;
+    .box {
+        background: rgba(0,0,0,0.7);
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 15px;
     }
-    table {
-        width: 100%;
-        margin-top: 1rem;
-        border-collapse: collapse;
-    }
-    td, th {
-        padding: 8px;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
+    .service {
+        margin-bottom: 8px;
     }
 </style>
 </head>
 
 <body>
-<div class="wrapper">
-    <h2 id="statusText">Loading…</h2>
-    <table id="serviceTable"></table>
+<div class="box">
+    <h2 id="live"></h2>
 </div>
+
+<div id="services"></div>
 
 <script>
 async function load() {
-    const repo = "troyervin/treeplex-status";
+    try {
+        const r = await fetch("https://status.treeplex.ca/api/summary.json");
+        const data = await r.json();
 
-    const rows = await fetch(`https://raw.githubusercontent.com/${repo}/master/api/summary.json`)
-        .then(r => r.json())
-        .catch(err => {
-            document.getElementById("statusText").innerText = "Error loading status";
-            return null;
+        // Live status
+        document.getElementById("live").innerText =
+            data.status.allSystemsOperational
+                ? "All systems operational"
+                : "Issues detected";
+
+        // Service table
+        let html = "";
+        data.services.forEach(s => {
+            html += `
+                <div class="box service">
+                    <strong>${s.name}</strong><br>
+                    Uptime: ${s.uptime}%<br>
+                    Response: ${s.responseTime} ms
+                </div>`;
         });
 
-    if (!rows) return;
+        document.getElementById("services").innerHTML = html;
 
-    document.getElementById("statusText").innerText =
-        rows.status.allSystemsOperational
-            ? "🟢 Live Status: All systems operational"
-            : "🟡 Issues detected";
-
-    let html = `
-        <tr><th>Service</th><th>Status</th><th>Response</th><th>Uptime</th></tr>
-    `;
-
-    rows.services.forEach(s => {
-        html += `
-        <tr>
-            <td>${s.name}</td>
-            <td>${s.status}</td>
-            <td>${s.responseTime ?? "-"}</td>
-            <td>${s.uptime ?? "-"}</td>
-        </tr>`;
-    });
-
-    document.getElementById("serviceTable").innerHTML = html;
+    } catch (err) {
+        document.body.innerHTML = "<div class='box'>Error loading status.</div>";
+    }
 }
 
 load();
+setInterval(load, 20000);
 </script>
 
 </body>
