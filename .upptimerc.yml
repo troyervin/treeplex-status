@@ -32,7 +32,7 @@ status-website:
 # This CSS block forces the background image and adds a card effect
   css: |
     body {
-      background-image: url('https://raw.githubusercontent.com/troyervin/treeplex-status/master/assets/background.jpg');
+      background-image: url('https://raw.githubusercontent.com/troyervin/treeplex-status/master/assets/background.png');
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
