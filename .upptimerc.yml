@@ -32,7 +32,7 @@ status-website:
 # This CSS block forces the background image
   css: |
     body {
-      background-image: url('https://raw.githubusercontent.com/troyervin/treeplex-status/master/assets/flex.jpg');
+      background-image: url('https://raw.githubusercontent.com/troyervin/treeplex-status/master/assets/background.png');
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
