@@ -25,8 +25,8 @@ status-website:
   cname: status.treeplex.ca
   # baseUrl: /your-repo-name
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Status
-  introTitle: "**TreePlex Status**"
+  name: Treeplex Status
+  #introTitle: "**TreePlex Status**"
   introMessage: Real-time status for Plex, Emby, and Overseerr services
   navbar:
     - title: TreePlex Home
