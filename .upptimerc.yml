@@ -22,10 +22,10 @@ status-website:
   introTitle: "**TreePlex Status**"
   introMessage: Real-time status for Plex, Emby, and Overseerr services
   navbar:
+    - title: TreePlex Home
+      href: https://treeplex.ca
     - title: Status
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration 
