@@ -32,24 +32,32 @@ status-website:
 # This CSS block forces the background image and adds a card effect
   css: |
     body {
-      background-image: url('https://raw.githubusercontent.com/troyervin/treeplex-status/master/assets/background.png');
+      background-image: url('https://raw.githubusercontent.com/troyervin/treeplex-status/master/assets/background.jpg');
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: center;
     }
     /* Darker background for the top title section */
-    .hero { background-color: rgba(0,0,0,0.7) !important; }
+    .hero { background-color: rgba(0,0,0,0.85) !important; }
     /* Darker background for the tabs */
-    .tabs { background-color: rgba(0,0,0,0.8) !important; }
-    
-    /* NEW: This adds the semi-transparent box behind the graphs */
+    .tabs { background-color: rgba(0,0,0,0.9) !important; }
+
+    /* NEW: Darker box behind the graphs (was 0.6, now 0.85) */
     section {
-      background-color: rgba(0, 0, 0, 0.6); /* Black with 60% opacity */
-      padding: 1.5rem; /* Adds space inside the box */
-      border-radius: 12px; /* Rounds the corners */
-      margin-top: 2rem; /* Adds space above the graphs */
-      box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* Adds a subtle shadow for depth */
+      background-color: rgba(0, 0, 0, 0.85); /* Much darker now */
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-top: 2rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    }
+    
+    /* NEW: Hides the empty "past incidents" boxes */
+    .incidents-list:empty {
+      display: none !important;
+    }
+    .pagination:empty {
+        display: none !important;
     }
   
   navbar:
