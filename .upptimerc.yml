@@ -48,8 +48,8 @@ status-website:
       padding: 0 !important;
     }
 
-    /* STEP 2: Only paint the dark box on the section that has the Graphs (SVG) */
-    section:has(svg) {
+    /* STEP 2: The "Smart" Rule for painting boxes */
+    section:has(svg), section:has(canvas), section:has(.uptime) {
       background-color: rgba(0, 0, 0, 0.85) !important;
       padding: 1.5rem !important;
       border-radius: 12px !important;
@@ -57,7 +57,7 @@ status-website:
       margin-top: 2rem !important;
     }
 
-  # Navigation Bar (This is now correctly aligned under status-website)
+  # Navigation Bar
   navbar:
     - title: TreePlex Home
       href: https://treeplex.ca
