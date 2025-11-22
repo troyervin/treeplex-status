@@ -9,6 +9,7 @@ sites:
     url: https://plex.treeplex.ca/web/index.html
   - name: Emby
     url: https://emby.treeplex.ca/web/index.html
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Emby_logo.svg/1200px-Emby_logo.svg.png
   - name: Overseerr
     url: https://add.treeplex.ca
 
