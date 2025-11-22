@@ -8,7 +8,7 @@ sites:
   - name: Plex
     url: https://plex.treeplex.ca/web/index.html
   - name: Emby
-    url: https://emby.treeplex.ca
+    url: https://emby.treeplex.ca/web/index.html
   - name: Overseerr
     url: https://add.treeplex.ca
 
