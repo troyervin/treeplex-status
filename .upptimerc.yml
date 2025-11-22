@@ -1,6 +1,7 @@
 # Change these first
-owner: troyervin # Your GitHub organization or username, where this repository lives
-repo: treeplex-status # The name of this repository
+owner: troyervin
+repo: treeplex-status
+
 sites:
   - name: TreePlex Server
     url: https://treeplex.ca
@@ -17,17 +18,19 @@ sites:
   - name: HomeAssistant
     url: https://ha.treeplex.ca
     icon: https://raw.githubusercontent.com/troyervin/treeplex-status/master/assets/homeassistanticon.ico
+
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
+  # Domain Settings
   cname: status.treeplex.ca
-  # baseUrl: /your-repo-name
+  # baseUrl: /treeplex-status
+
+  # Branding
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
   name: Treeplex Status
-  #introTitle: "**TreePlex Status**"
   introMessage: Real-time status for Plex, Emby, and Overseerr services
-# This CSS block forces the background image and adds a card effect
-css: |
+
+  # CSS Block
+  css: |
     body {
       background-image: url('https://raw.githubusercontent.com/troyervin/treeplex-status/master/assets/background.png');
       background-size: cover;
@@ -39,7 +42,6 @@ css: |
     .tabs { background-color: rgba(0,0,0,0.9) !important; }
 
     /* STEP 1: Make ALL sections transparent by default */
-    /* This makes the empty "Active Incidents" boxes invisible */
     section {
       background-color: transparent !important;
       box-shadow: none !important;
@@ -47,7 +49,6 @@ css: |
     }
 
     /* STEP 2: Only paint the dark box on the section that has the Graphs (SVG) */
-    /* This targets the Live Status section specifically */
     section:has(svg) {
       background-color: rgba(0, 0, 0, 0.85) !important;
       padding: 1.5rem !important;
@@ -55,10 +56,10 @@ css: |
       box-shadow: 0 4px 6px rgba(0,0,0,0.5) !important;
       margin-top: 2rem !important;
     }
+
+  # Navigation Bar (This is now correctly aligned under status-website)
   navbar:
     - title: TreePlex Home
       href: https://treeplex.ca
     - title: Status
       href: /
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration 
