@@ -15,6 +15,9 @@ sites:
   - name: Overseerr
     url: https://add.treeplex.ca
     icon: https://raw.githubusercontent.com/troyervin/treeplex-status/master/assets/overseerricon.ico
+  - name: HomeAssistant
+    url: https://ha.treeplex.ca
+    icon: https://raw.githubusercontent.com/troyervin/treeplex-status/master/assets/homeassistanticon.ico
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
