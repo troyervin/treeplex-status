@@ -23,19 +23,17 @@
     "icon": "https://icons.duckduckgo.com/ip3/plex.treeplex.ca.ico",
     "slug": "plex",
     "status": "up",
-    "uptime": "2.29%",
-    "uptimeDay": "2.29%",
-    "uptimeWeek": "2.29%",
-    "uptimeMonth": "2.29%",
-    "uptimeYear": "2.29%",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
     "time": 910,
     "timeDay": 910,
     "timeWeek": 910,
     "timeMonth": 910,
     "timeYear": 910,
-    "dailyMinutesDown": {
-      "2025-11-22": 7
-    }
+    "dailyMinutesDown": {}
   },
   {
     "name": "Emby",
