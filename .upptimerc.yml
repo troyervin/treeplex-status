@@ -4,7 +4,7 @@ repo: treeplex-status
 
 sites:
   - name: TreePlex Server
-    url: https://treeplex.ca
+    url: https://home.treeplex.ca
     icon: https://raw.githubusercontent.com/troyervin/treeplex-status/master/assets/treeplexicon.ico
   - name: Plex
     url: https://plex.treeplex.ca/web/index.html
