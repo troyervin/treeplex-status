@@ -23,13 +23,11 @@ status-website:
   # Domain Settings
   cname: status.treeplex.ca
   # baseUrl: /treeplex-status
-
+  theme: dark
   # Branding
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
   name: TreePlex Status
   introMessage: Real-time status for Plex, Emby, and Overseerr services
-
-  theme: dark
 
 # CSS Block
   css: |
