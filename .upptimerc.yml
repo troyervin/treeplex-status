@@ -29,6 +29,8 @@ status-website:
   name: TreePlex Status
   introMessage: Real-time status for Plex, Emby, and Overseerr services
 
+  theme: dark
+
 # CSS Block
   css: |
     body {
