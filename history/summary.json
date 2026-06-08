@@ -100,16 +100,16 @@
     "url": "https://emby.treeplex.ca/System/Info/Public",
     "icon": "https://raw.githubusercontent.com/troyervin/treeplex-status/master/assets/embyicon.ico",
     "slug": "emby",
-    "status": "down",
-    "uptime": "59.03%",
-    "uptimeDay": "96.10%",
-    "uptimeWeek": "99.44%",
+    "status": "up",
+    "uptime": "59.01%",
+    "uptimeDay": "89.16%",
+    "uptimeWeek": "98.45%",
     "uptimeMonth": "96.64%",
-    "uptimeYear": "59.03%",
+    "uptimeYear": "59.01%",
     "time": 559,
-    "timeDay": 567,
-    "timeWeek": 519,
-    "timeMonth": 556,
+    "timeDay": 596,
+    "timeWeek": 532,
+    "timeMonth": 558,
     "timeYear": 559,
     "dailyMinutesDown": {
       "2025-11-26": 193,
@@ -206,7 +206,7 @@
       "2026-02-25": 1332,
       "2026-05-12": 211,
       "2026-06-07": 56,
-      "2026-06-08": 0
+      "2026-06-08": 100
     }
   },
   {
