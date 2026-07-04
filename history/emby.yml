@@ -1,7 +1,7 @@
 url: https://emby.treeplex.ca/System/Info/Public
-status: up
-code: 200
-responseTime: 577
-lastUpdated: 2026-07-04T00:01:28.741Z
+status: down
+code: 502
+responseTime: 3305
+lastUpdated: 2026-07-04T04:54:46.126Z
 startTime: 2025-11-22T18:41:50.299Z
 generator: Upptime <https://github.com/upptime/upptime>
