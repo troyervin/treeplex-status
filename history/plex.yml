@@ -1,7 +1,7 @@
 url: https://plex.treeplex.ca/web/index.html
-status: up
-code: 200
-responseTime: 329
-lastUpdated: 2026-07-04T00:01:28.142Z
+status: down
+code: 502
+responseTime: 3373
+lastUpdated: 2026-07-04T04:54:24.366Z
 startTime: 2025-11-22T18:41:48.208Z
 generator: Upptime <https://github.com/upptime/upptime>
