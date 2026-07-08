@@ -262,9 +262,9 @@
     "url": "https://ha.treeplex.ca",
     "icon": "https://raw.githubusercontent.com/troyervin/treeplex-status/master/assets/homeassistanticon.ico",
     "slug": "home-assistant",
-    "status": "up",
+    "status": "down",
     "uptime": "94.13%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "93.18%",
     "uptimeYear": "94.13%",
@@ -309,7 +309,8 @@
       "2026-06-22": 456,
       "2026-06-21": 1437,
       "2026-06-26": 6,
-      "2026-06-25": 1087
+      "2026-06-25": 1087,
+      "2026-07-08": 0
     }
   }
 ]
