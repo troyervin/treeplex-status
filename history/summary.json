@@ -4,11 +4,11 @@
     "url": "https://home.treeplex.ca",
     "icon": "https://raw.githubusercontent.com/troyervin/treeplex-status/master/assets/treeplexicon.ico",
     "slug": "tree-plex-server",
-    "status": "up",
+    "status": "down",
     "uptime": "96.95%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
+    "uptimeDay": "99.71%",
+    "uptimeWeek": "99.96%",
+    "uptimeMonth": "99.99%",
     "uptimeYear": "96.95%",
     "time": 386,
     "timeDay": 1144,
@@ -46,7 +46,8 @@
       "2026-03-26": 19,
       "2026-04-01": 53,
       "2026-07-18": 100,
-      "2026-08-09": 166
+      "2026-08-09": 166,
+      "2026-09-24": 4
     }
   },
   {
@@ -107,11 +108,11 @@
     "icon": "https://raw.githubusercontent.com/troyervin/treeplex-status/master/assets/embyicon.ico",
     "slug": "emby",
     "status": "up",
-    "uptime": "73.42%",
+    "uptime": "73.44%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
-    "uptimeYear": "73.42%",
+    "uptimeYear": "73.44%",
     "time": 645,
     "timeDay": 1082,
     "timeWeek": 598,
@@ -271,9 +272,9 @@
     "url": "https://ha.treeplex.ca",
     "icon": "https://raw.githubusercontent.com/troyervin/treeplex-status/master/assets/homeassistanticon.ico",
     "slug": "home-assistant",
-    "status": "up",
+    "status": "down",
     "uptime": "95.13%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "97.47%",
     "uptimeYear": "95.13%",
@@ -328,7 +329,8 @@
       "2026-09-13": 321,
       "2026-09-12": 61,
       "2026-09-16": 406,
-      "2026-09-15": 319
+      "2026-09-15": 319,
+      "2026-09-24": 0
     }
   }
 ]
